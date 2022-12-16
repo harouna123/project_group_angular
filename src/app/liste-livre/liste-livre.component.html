@@ -1,0 +1,10 @@
+<div class="container">
+    <div *ngFor="let un_livre of les_livres" class="">
+        <h4>{{un_livre.titre}}</h4>
+        <p>
+            <img [src]="path_backend+un_livre.image_url" alt="">
+        </p>
+
+        <a [routerLink]="['/edit',un_livre.id_livre]">modifier</a>
+    </div>
+</div>
